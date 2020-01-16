@@ -49,7 +49,7 @@ Na projekte sa podielali dvaja študenti Technickej univerzity v Košiciach. Ka�
 
 ### Face Recognition Api ###
 - (Microsoft Azure, subskripcia Azure for Students, 30000 volaní mesačne zdarma), endpoint https://faceappcloudy.cognitiveservices.azure.com/
-Hlavný skript sa nachádza v priečinku Assets/Scripts/displayWebcam.cs
+Hlavný skript sa nachádza v priečinku Assets/Scripts/webcam.cs
 Služba funguje ako RESTapi, kde vstupom je fotografia a výstupom je JSON obsahujúci výstup zo služby.
 Pre správne fungovanie je nutné na disku vytvoriť priečinok C:\WebcamSnaps\, alebo nastaviť inú cestu pre ukladanie snímok z kamery.
 Verifikáciu zabezpečuje porovnanie fotografie z webkamery s vytvorenou skupinou na Azure FaceAPI, kde má každý užívateľ pridelený jednoznačný identifikátor a vracia confidence level, ako veľmi sa tvár podobá s tvárou v databáze. Pre úspešnú verifikáciu musí mať daný užívateľ confidence aspoň 0.8.
